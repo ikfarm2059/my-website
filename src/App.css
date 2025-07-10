@@ -10,7 +10,7 @@ body {
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 30vmin;
   pointer-events: none;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -33,6 +33,29 @@ body {
   margin: 0;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.App-header nav {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中央揃えにする場合 */
+  flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
+}
+
+.App-header nav a {
+  color: white;
+  margin: 0 15px; /* リンク間の余白 */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.App-header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .catchphrase-section {
@@ -69,9 +92,23 @@ body {
   display: inline-block;
 }
 
+.instagram-icon-link {
+  display: inline-flex; /* アイコンとテキストを横並びにする */
+  align-items: center; /* 中央揃え */
+  gap: 8px; /* アイコンとテキストの間隔 */
+  text-decoration: none; /* 下線を消す */
+  color: inherit; /* 親要素の色を継承 */
+  transition: transform 0.3s ease;
+}
+
+.instagram-icon-link:hover {
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
 main {
   padding: 20px;
 }
+
 
 .section {
   max-width: 960px;
@@ -172,6 +209,80 @@ main {
   color: white;
   padding: 20px;
   margin-top: 60px;
+}
+
+/* Work Daily Carousel */
+.work-daily-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-slide {
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.carousel-slide p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
 }
 
 /* レスポンシブ対応 */
