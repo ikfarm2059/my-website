@@ -1,4 +1,5 @@
 import React from 'react';
+import './InstagramLink.css';
 import InstagramIcon from './InstagramIcon';
 
 const InstagramLink = () => {

@@ -7,6 +7,9 @@ body {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -19,7 +22,7 @@ body {
 }
 
 .App-header {
-  background-color: #2E8B57; /* 緑色 */
+  background-color: #4682B4; /* 青みがかった緑色 */
   padding: 60px 20px;
   color: white;
   display: flex;
@@ -92,21 +95,11 @@ body {
   display: inline-block;
 }
 
-.instagram-icon-link {
-  display: inline-flex; /* アイコンとテキストを横並びにする */
-  align-items: center; /* 中央揃え */
-  gap: 8px; /* アイコンとテキストの間隔 */
-  text-decoration: none; /* 下線を消す */
-  color: inherit; /* 親要素の色を継承 */
-  transition: transform 0.3s ease;
-}
 
-.instagram-icon-link:hover {
-  transform: scale(1.1); /* ホバー時に少し拡大 */
-}
 
 main {
   padding: 20px;
+  flex: 1;
 }
 
 
@@ -125,84 +118,9 @@ main {
   margin-bottom: 30px;
 }
 
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
 
-.product-item {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
 
-.product-item:hover {
-  transform: translateY(-10px);
-}
 
-.product-item h3 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-top: 20px;
-}
-
-.product-item p {
-  padding: 0 20px 20px;
-}
-
-.product-background {
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-.product-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.product-item:hover .product-background img {
-  transform: scale(1.1);
-}
-
-/* 作物のアニメーション */
-.rice-animation::after, .wheat-animation::after, .soy-animation::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(transparent, rgba(0,0,0,0.1));
-  animation: sway 5s ease-in-out infinite alternate;
-}
-
-@keyframes sway {
-  from { transform: skewX(-5deg) translateX(-5px); }
-  to { transform: skewX(5deg) translateX(5px); }
-}
-
-.president-section {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.president-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #2E8B57;
-}
-
-.president-message {
-  text-align: left;
-}
 
 .App-footer {
   background-color: #333;
@@ -211,79 +129,7 @@ main {
   margin-top: 60px;
 }
 
-/* Work Daily Carousel */
-.work-daily-carousel {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 8px;
-}
 
-.carousel-slide {
-  text-align: center;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.carousel-slide p {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 20px;
-  line-height: 1;
-  transition: background-color 0.3s ease;
-}
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-button.prev {
-  left: 10px;
-}
-
-.carousel-button.next {
-  right: 10px;
-}
-
-.carousel-dots {
-  text-align: center;
-  padding: 15px 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 4px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot.active {
-  background-color: #717171;
-}
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
@@ -296,4 +142,9 @@ main {
   .catchphrase-section h2 {
     font-size: calc(16px + 5vmin);
   }
+}
+
+.App-header h1 a {
+  color: white;
+  text-decoration: none;
 }

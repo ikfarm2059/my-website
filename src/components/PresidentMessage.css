@@ -1,0 +1,17 @@
+.president-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.president-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2E8B57;
+}
+
+.president-message {
+  text-align: left;
+}

@@ -1,0 +1,12 @@
+.instagram-icon-link {
+  display: inline-flex; /* アイコンとテキストを横並びにする */
+  align-items: center; /* 中央揃え */
+  gap: 8px; /* アイコンとテキストの間隔 */
+  text-decoration: none; /* 下線を消す */
+  color: inherit; /* 親要素の色を継承 */
+  transition: transform 0.3s ease;
+}
+
+.instagram-icon-link:hover {
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+}

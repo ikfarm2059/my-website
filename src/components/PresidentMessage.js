@@ -1,4 +1,5 @@
 import React from 'react';
+import './PresidentMessage.css';
 import president from '../assets/president.jpg';
 
 function PresidentMessage() {
