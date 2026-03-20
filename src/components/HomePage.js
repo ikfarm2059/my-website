@@ -7,11 +7,12 @@ import WorkDaily from './WorkDaily';
 import CompanyMessage from './CompanyMessage';
 import Contact from './Contact';
 import CompanyInfo from './CompanyInfo';
+import styles from './HomePage.module.css';
 
 const HomePage = () => (
   <>
-    <section className="catchphrase-section">
-      <div className="background-animation"></div>
+    <section className={styles.catchphrase_section}>
+      <div className={styles.background_animation}></div>
       <h2>大地と、未来へ。</h2>
     </section>
 
