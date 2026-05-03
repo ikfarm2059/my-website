@@ -3,6 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import './App.css';
 import InstagramLink from './components/InstagramLink';
+import { siteContent } from './data/siteContent';
 import logo from './assets/logo.jpg';
 
 function Layout() {
@@ -10,16 +11,15 @@ function Layout() {
     <div className="App">
       <header className="App-header">
         <Link to="/">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt={siteContent.company.logoAlt} />
         </Link>
-        <h1><Link to="/">株式会社アイケーファーム</Link></h1>
+        <h1><Link to="/">{siteContent.company.name}</Link></h1>
         <nav>
-          <NavHashLink smooth to="/#about">私たちについて</NavHashLink>
-          <NavHashLink smooth to="/#products">商品</NavHashLink>
-          <NavHashLink smooth to="/#work-daily">Work Daily</NavHashLink>
-          <NavHashLink smooth to="/#company-message">Message from IKfarm</NavHashLink>
+          {siteContent.nav.slice(0, 4).map((item) => (
+            <NavHashLink key={item.href} smooth to={item.href}>{item.label}</NavHashLink>
+          ))}
           <InstagramLink />
-          <NavHashLink smooth to="/#contact">お問い合わせ</NavHashLink>
+          <NavHashLink smooth to={siteContent.nav[4].href}>{siteContent.nav[4].label}</NavHashLink>
         </nav>
       </header>
       <main>
@@ -27,8 +27,8 @@ function Layout() {
       </main>
       <footer className="App-footer">
         <InstagramLink />
-        <p>詳しい内容や詳細については、メールまたはInstagramのDMで気楽にご相談ください</p>
-        <p>&copy; 2025 IK-FARM Inc. All Rights Reserved.</p>
+        <p>{siteContent.footer.message}</p>
+        <p>{siteContent.company.copyright}</p>
       </footer>
     </div>
   );

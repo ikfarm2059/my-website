@@ -13,7 +13,7 @@ function Products() {
           </div>
           <h3>{product.name}</h3>
           <p>{product.description}</p>
-          <Link to="/sales" className="sales-link">購入ページへ</Link>
+          <Link to="/sales" className="sales-link">販売について見る</Link>
         </div>
       ))}
     </div>

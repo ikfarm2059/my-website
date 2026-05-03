@@ -1,73 +1,72 @@
-/* Work Daily Carousel */
 .work-daily-carousel {
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 760px;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .carousel-slide {
-  text-align: center;
+  text-align: left;
 }
 
-.carousel-slide img {
+.carousel-slide img,
+.carousel-slide video {
   width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
-  border-radius: 8px;
+  max-height: 560px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+  background: #e4e0d6;
 }
 
 .carousel-slide p {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  color: #555;
+  margin-top: 14px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: #3b463f;
 }
 
 .carousel-button {
   position: absolute;
-  top: 50%;
+  top: 42%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 42px;
+  height: 42px;
+  background-color: rgba(31, 42, 36, 0.72);
   color: white;
   border: none;
-  padding: 10px 15px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 20px;
   line-height: 1;
-  transition: background-color 0.3s ease;
 }
 
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(31, 42, 36, 0.92);
 }
 
 .carousel-button.prev {
-  left: 10px;
+  left: 12px;
 }
 
 .carousel-button.next {
-  right: 10px;
+  right: 12px;
 }
 
 .carousel-dots {
-  text-align: center;
-  padding: 15px 0;
+  display: flex;
+  gap: 8px;
+  padding: 16px 0 0;
 }
 
 .dot {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 4px;
-  background-color: #bbb;
-  border-radius: 50%;
+  height: 8px;
+  width: 28px;
+  background-color: rgba(36, 93, 76, 0.22);
+  border-radius: 999px;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
 .dot.active {
-  background-color: #717171;
+  background-color: #245d4c;
 }

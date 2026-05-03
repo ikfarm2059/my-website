@@ -1,115 +1,120 @@
 body {
-  background-color: #FFFFEE; /* 薄い黄色 */
-  color: #333;
-  font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+  background-color: #f7f5ef;
+  color: #222;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Hiragino Sans', 'Meiryo', serif;
   margin: 0;
+}
+
+a {
+  color: #245d4c;
 }
 
 .App {
-  text-align: center;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .App-logo {
-  height: 30vmin;
-  pointer-events: none;
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 20px;
-  border: 5px solid #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid rgba(36, 93, 76, 0.22);
 }
 
 .App-header {
-  background-color: #4682B4; /* 青みがかった緑色 */
-  padding: 60px 20px;
-  color: white;
-  display: flex;
-  flex-direction: column;
+  background-color: #f7f5ef;
+  color: #222;
+  padding: 22px clamp(18px, 4vw, 56px);
+  border-bottom: 1px solid rgba(36, 93, 76, 0.18);
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: center;
+  gap: 18px 24px;
 }
 
 .App-header h1 {
-  font-size: calc(20px + 5vmin);
+  font-size: clamp(1.45rem, 3vw, 2.4rem);
   margin: 0;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-.App-header nav {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* 中央揃えにする場合 */
-  flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
-}
-
-.App-header nav a {
-  color: white;
-  margin: 0 15px; /* リンク間の余白 */
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.App-header nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-
-
-
-
-main {
-  padding: 20px;
-  flex: 1;
-}
-
-
-.section {
-  max-width: 960px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-}
-
-.section h2 {
-  font-size: 2.5rem;
-  color: #2E8B57;
-  margin-bottom: 30px;
-}
-
-
-
-
-
-.App-footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  margin-top: 60px;
-}
-
-
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .president-section {
-    flex-direction: column;
-  }
-  .App-header h1 {
-    font-size: calc(18px + 6vmin);
-  }
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .App-header h1 a {
-  color: white;
+  color: #1f2a24;
   text-decoration: none;
+}
+
+.App-header nav {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 20px;
+}
+
+.App-header nav a {
+  color: #2d3b34;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.App-header nav a:hover {
+  border-bottom-color: #245d4c;
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 40px);
+  border-bottom: 1px solid rgba(36, 93, 76, 0.14);
+}
+
+.section h2 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  color: #245d4c;
+  margin: 0 0 26px;
+  font-weight: 600;
+}
+
+.section p,
+.body-copy p {
+  font-size: 1.02rem;
+  line-height: 2;
+  margin: 0 0 1em;
+}
+
+.body-copy {
+  max-width: 760px;
+}
+
+.App-footer {
+  background-color: #26332d;
+  color: #f7f5ef;
+  padding: 34px clamp(20px, 5vw, 56px);
+}
+
+.App-footer p {
+  max-width: 760px;
+  line-height: 1.8;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .App-logo {
+    width: 68px;
+    height: 68px;
+  }
 }

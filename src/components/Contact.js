@@ -1,11 +1,11 @@
-
 import React from 'react';
+import { siteContent } from '../data/siteContent';
 
 function Contact() {
   return (
     <>
-      <p>ご連絡は以下のメールアドレスまでお願いいたします。</p>
-      <p>Email: ikfarm2059@gmail.com</p>
+      <p>{siteContent.contact.message}</p>
+      <p><a href={`mailto:${siteContent.company.email}`}>{siteContent.company.email}</a></p>
     </>
   );
 }

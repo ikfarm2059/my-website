@@ -1,13 +1,15 @@
 import React from 'react';
+import { siteContent } from '../data/siteContent';
 import styles from './CompanyMessage.module.css';
 
 function CompanyMessage() {
   return (
-    <p>
-      <span className={styles.highlight}>一緒に働いていただける方を募集しています</span><br />
-      詳しい内容や詳細については メール または Instagram の DM<br />
-      で気楽に相談 ください
-    </p>
+    <div className="body-copy">
+      <p className={styles.highlight}>{siteContent.recruitment.lead}</p>
+      {siteContent.recruitment.paragraphs.map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
+      ))}
+    </div>
   );
 }
 

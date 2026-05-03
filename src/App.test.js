@@ -1,8 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { MemoryRouter } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import { siteContent } from './data/siteContent';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the company homepage sections', () => {
+  render(
+    <MemoryRouter>
+      <HomePage />
+    </MemoryRouter>
+  );
+
+  expect(screen.getByText(siteContent.sectionTitles.about)).toBeInTheDocument();
+  expect(screen.getByText(siteContent.sectionTitles.products)).toBeInTheDocument();
 });

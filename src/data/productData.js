@@ -4,22 +4,22 @@ import soyImage from '../assets/soy.jpg';
 
 const productData = [
   {
-    name: '稲作',
-    description: '約100haの広大な土地で、太陽の光をたっぷり浴びた美味しいお米を育てています。',
+    name: 'お米',
+    description: '毎日の食卓にのぼるものだから、田んぼの状態を見ながら、収穫まで丁寧に管理しています。',
     image: riceImage,
-    alt: '稲作',
+    alt: '収穫したお米',
     animationClass: 'rice-animation'
   },
   {
     name: '麦',
-    description: '品質にこだわった麦を約100haの規模で栽培。様々な加工品へと姿を変えます。',
+    description: '地域の輪作を支える作物として、時期を見ながら播種、管理、収穫を行っています。',
     image: wheatImage,
-    alt: '麦',
+    alt: '麦畑',
     animationClass: 'wheat-animation'
   },
   {
     name: '大豆',
-    description: '栄養豊富な大豆を約100haの圃場で生産。日本の食卓に欠かせない食材です。',
+    description: '味噌や豆腐など、身近な食べものにつながる作物です。土づくりから収穫まで気を配っています。',
     image: soyImage,
     alt: '大豆',
     animationClass: 'soy-animation'

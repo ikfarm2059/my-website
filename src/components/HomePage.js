@@ -7,39 +7,43 @@ import WorkDaily from './WorkDaily';
 import CompanyMessage from './CompanyMessage';
 import Contact from './Contact';
 import CompanyInfo from './CompanyInfo';
+import { siteContent } from '../data/siteContent';
 import styles from './HomePage.module.css';
 
 const HomePage = () => (
   <>
     <section className={styles.catchphrase_section}>
       <div className={styles.background_animation}></div>
-      <h2>大地と、未来へ。</h2>
+      <div className={styles.catchphrase_inner}>
+        <p>{siteContent.hero.locationLabel}</p>
+        <h2>{siteContent.hero.title}</h2>
+      </div>
     </section>
 
     <div id="about">
-      <Section title="私たちについて">
+      <Section title={siteContent.sectionTitles.about}>
         <AboutUs />
       </Section>
       <PresidentMessage />
     </div>
 
-    <Section id="products" title="生産物">
+    <Section id="products" title={siteContent.sectionTitles.products}>
       <Products />
     </Section>
 
-    <Section id="work-daily" title="Work Daily">
+    <Section id="work-daily" title={siteContent.sectionTitles.workDaily}>
       <WorkDaily />
     </Section>
 
-    <Section id="company-message" title="Message from IKfarm">
+    <Section id="company-message" title={siteContent.sectionTitles.recruitment}>
       <CompanyMessage />
     </Section>
 
-    <Section id="contact" title="お問い合わせ">
+    <Section id="contact" title={siteContent.sectionTitles.contact}>
       <Contact />
     </Section>
 
-    <Section id="company-info" title="会社情報">
+    <Section id="company-info" title={siteContent.sectionTitles.companyInfo}>
       <CompanyInfo />
     </Section>
   </>

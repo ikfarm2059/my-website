@@ -1,17 +1,31 @@
 .president-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
   align-items: center;
-  gap: 40px;
+  gap: clamp(28px, 6vw, 64px);
 }
 
 .president-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 6px;
   object-fit: cover;
-  border: 5px solid #2E8B57;
 }
 
 .president-message {
   text-align: left;
+}
+
+.president-message p {
+  max-width: 660px;
+}
+
+@media (max-width: 768px) {
+  .president-section {
+    grid-template-columns: 1fr;
+  }
+
+  .president-image {
+    max-width: 320px;
+  }
 }

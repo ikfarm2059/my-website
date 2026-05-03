@@ -1,10 +1,11 @@
 import React from 'react';
+import { siteContent } from '../data/siteContent';
 
 function Sales() {
   return (
     <section id="sales" className="section">
-      <h2>商品販売</h2>
-      <p>現在準備中です。しばらくお待ちください。</p>
+      <h2>{siteContent.sales.title}</h2>
+      <p>{siteContent.sales.message}</p>
     </section>
   );
 }

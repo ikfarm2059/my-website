@@ -10,43 +10,43 @@ export const dailyEntries = [
   {
     type: 'image',
     src: workDailySoyPrep,
-    alt: '大豆圃場準備',
-    caption: '大豆圃場準備、全面除草剤散布'
+    alt: '大豆の圃場準備',
+    caption: '大豆の圃場準備。表面を整えて、次の作業に入りやすくします。'
   },
   {
     type: 'image',
     src: workDailyStubbleCultch,
-    alt: 'スタブルカルチ',
-    caption: 'スタブルカルチ'
+    alt: 'スタブルカルチ作業',
+    caption: 'スタブルカルチで土を起こす作業。圃場の状態を見ながら進めます。'
   },
   {
     type: 'image',
     src: workDailyPowerHarrow,
-    alt: '４ｍパワーハロー',
-    caption: '４ｍパワーハロー'
+    alt: 'パワーハロー作業',
+    caption: 'パワーハローで播種前の土を細かく整えます。'
   },
   {
     type: 'video',
     src: workDailyVideo,
-    alt: '作業動画',
-    caption: '大豆圃場明渠作業、topcon自動操舵'
+    alt: '大豆圃場の作業動画',
+    caption: '大豆圃場での作業。Topconの自動操舵を使っています。'
   },
   {
     type: 'video',
     src: newVideo,
-    alt: '自社RTK基地',
-    caption: '自社RTK基地局接続、圃場測量６ha１０分、後は自動散布'
+    alt: '自社RTK基地局',
+    caption: '自社RTK基地局を使った圃場測量。作業の精度を上げるための準備です。'
   },
   {
     type: 'image',
     src: workDailyDoronn,
     alt: 'ドローン',
-    caption: 'ドローン'
+    caption: 'ドローンを使った確認作業。広い圃場も上から状態を見られます。'
   },
   {
     type: 'image',
     src: workDailyDaizuhasyu,
-    alt: '大豆播種',
-    caption: '大豆播種'
+    alt: '大豆の播種',
+    caption: '大豆の播種作業。天気と土の状態を見ながら進めています。'
   }
 ];
