@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.d480dcf8.css",
+    "main.js": "/my-website/static/js/main.b9707f8b.js",
+    "static/media/IMG_daizu_topcon.mov": "/my-website/static/media/IMG_daizu_topcon.d74db93621f206a19a2c.mov",
+    "static/media/IMG_202507190849460.MOV": "/my-website/static/media/IMG_202507190849460.edccfa3a37da91d30db6.MOV",
+    "static/media/wheat.jpg": "/my-website/static/media/wheat.710bae0b87009448e252.jpg",
+    "static/media/rice.jpg": "/my-website/static/media/rice.5b39f64a1696a2b59472.jpg",
+    "static/media/soy.jpg": "/my-website/static/media/soy.d974a8b61de6ba328e85.jpg",
+    "static/media/work-daily-daizuhasyu.jpg": "/my-website/static/media/work-daily-daizuhasyu.0f05e21b2f843fa0d8dd.jpg",
+    "static/media/work-daily-power-harrow.jpg": "/my-website/static/media/work-daily-power-harrow.c985668308d049cafb99.jpg",
+    "static/media/president.jpg": "/my-website/static/media/president.9c88d84c9fd77315d365.jpg",
+    "static/media/work-daily-stubble-cultch.jpg": "/my-website/static/media/work-daily-stubble-cultch.ae0430e9d23ae3525b23.jpg",
+    "static/media/work-daily-doronn.jpg": "/my-website/static/media/work-daily-doronn.89accd99144d892e16ab.jpg",
+    "static/media/work-daily-soy-prep.jpg": "/my-website/static/media/work-daily-soy-prep.48ddcd23d58a43a34e6b.jpg",
+    "static/media/logo.jpg": "/my-website/static/media/logo.71a6382a2eead23e5b71.jpg",
+    "index.html": "/my-website/index.html",
+    "main.d480dcf8.css.map": "/my-website/static/css/main.d480dcf8.css.map",
+    "main.b9707f8b.js.map": "/my-website/static/js/main.b9707f8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d480dcf8.css",
+    "static/js/main.b9707f8b.js"
+  ]
+}
