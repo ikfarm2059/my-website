@@ -58,5 +58,8 @@ export const siteContent = {
     title: '商品販売について',
     message:
       '現在、販売ページを準備しています。ご希望の方はメールまたはInstagramのDMからお問い合わせください。'
+  },
+  products: {
+    salesLinkLabel: '販売について見る'
   }
 };

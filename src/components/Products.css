@@ -19,7 +19,7 @@
 .product-item h3 {
   font-size: 1.28rem;
   margin: 18px 0 8px;
-  color: #26332d;
+  color: var(--color-footer);
 }
 
 .product-item p {
@@ -30,12 +30,12 @@
 .sales-link {
   display: inline-block;
   margin-top: 16px;
-  color: #245d4c;
+  color: var(--color-primary);
   text-decoration: none;
-  border-bottom: 1px solid #245d4c;
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .sales-link:hover {
-  color: #1f2a24;
-  border-bottom-color: #1f2a24;
+  color: var(--color-dark);
+  border-bottom-color: var(--color-dark);
 }

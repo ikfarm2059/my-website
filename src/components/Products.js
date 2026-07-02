@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Products.css';
 import productData from '../data/productData';
+import { siteContent } from '../data/siteContent';
 
 function Products() {
   return (
@@ -13,7 +14,7 @@ function Products() {
           </div>
           <h3>{product.name}</h3>
           <p>{product.description}</p>
-          <Link to="/sales" className="sales-link">販売について見る</Link>
+          <Link to="/sales" className="sales-link">{siteContent.products.salesLinkLabel}</Link>
         </div>
       ))}
     </div>

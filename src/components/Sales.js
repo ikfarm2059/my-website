@@ -1,12 +1,12 @@
 import React from 'react';
+import Section from './Section';
 import { siteContent } from '../data/siteContent';
 
 function Sales() {
   return (
-    <section id="sales" className="section">
-      <h2>{siteContent.sales.title}</h2>
+    <Section id="sales" title={siteContent.sales.title}>
       <p>{siteContent.sales.message}</p>
-    </section>
+    </Section>
   );
 }
 

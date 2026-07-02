@@ -1,0 +1,24 @@
+.section {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(48px, 8vw, 88px) clamp(20px, 5vw, 40px);
+  border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.14);
+}
+
+.section h2 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  color: var(--color-primary);
+  margin: 0 0 26px;
+  font-weight: 600;
+}
+
+.section p,
+.body-copy p {
+  font-size: 1.02rem;
+  line-height: 2;
+  margin: 0 0 1em;
+}
+
+.body-copy {
+  max-width: 760px;
+}

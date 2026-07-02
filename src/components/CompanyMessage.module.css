@@ -1,5 +1,5 @@
 .highlight {
-  color: #245d4c;
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 1.25rem;
 }

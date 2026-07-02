@@ -31,7 +31,7 @@
   transform: translateY(-50%);
   width: 42px;
   height: 42px;
-  background-color: rgba(31, 42, 36, 0.72);
+  background-color: rgba(var(--color-dark-rgb), 0.72);
   color: white;
   border: none;
   cursor: pointer;
@@ -41,7 +41,7 @@
 }
 
 .carousel-button:hover {
-  background-color: rgba(31, 42, 36, 0.92);
+  background-color: rgba(var(--color-dark-rgb), 0.92);
 }
 
 .carousel-button.prev {
@@ -62,11 +62,11 @@
   cursor: pointer;
   height: 8px;
   width: 28px;
-  background-color: rgba(36, 93, 76, 0.22);
+  background-color: rgba(var(--color-primary-rgb), 0.22);
   border-radius: 999px;
   display: inline-block;
 }
 
 .dot.active {
-  background-color: #245d4c;
+  background-color: var(--color-primary);
 }
