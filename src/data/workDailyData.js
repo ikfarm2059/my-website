@@ -5,8 +5,15 @@ import workDailyVideo from '../assets/IMG_daizu_topcon.mov';
 import newVideo from '../assets/IMG_202507190849460.MOV';
 import workDailyDoronn from '../assets/work-daily-doronn.jpg';
 import workDailyDaizuhasyu from '../assets/work-daily-daizuhasyu.jpg';
+import workDailyDroneAerial from '../assets/work-daily-drone-aerial.mp4';
 
 export const dailyEntries = [
+  {
+    type: 'video',
+    src: workDailyDroneAerial,
+    alt: '夕暮れの圃場の空撮',
+    caption: 'ドローンで撮った夕暮れの吉良町。この広い景色ぜんぶが、私たちの仕事場です。'
+  },
   {
     type: 'image',
     src: workDailySoyPrep,
