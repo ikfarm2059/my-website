@@ -6,6 +6,9 @@ import newVideo from '../assets/IMG_202507190849460.MOV';
 import workDailyDoronn from '../assets/work-daily-doronn.jpg';
 import workDailyDaizuhasyu from '../assets/work-daily-daizuhasyu.jpg';
 import workDailyDroneAerial from '../assets/work-daily-drone-aerial.mp4';
+import workDailyInekariFields from '../assets/work-daily-inekari-fields.jpg';
+import workDailyInekariCombine from '../assets/work-daily-inekari-combine.jpg';
+import workDailyFleconShipping from '../assets/work-daily-flecon-shipping.jpg';
 
 export const dailyEntries = [
   {
@@ -55,5 +58,23 @@ export const dailyEntries = [
     src: workDailyDaizuhasyu,
     alt: '大豆の播種',
     caption: '大豆の播種作業。天気と土の状態を見ながら進めています。'
+  },
+  {
+    type: 'image',
+    src: workDailyInekariFields,
+    alt: '秋の稲刈り',
+    caption: '秋晴れの稲刈り。コンバイン2台で、町の田んぼを順番に刈り進めていきます。'
+  },
+  {
+    type: 'image',
+    src: workDailyInekariCombine,
+    alt: '稲刈りを終えたコンバイン',
+    caption: '今年の稲刈りが無事終了。一年がんばってくれたコンバインに感謝です。'
+  },
+  {
+    type: 'image',
+    src: workDailyFleconShipping,
+    alt: 'フレコンでの出荷作業',
+    caption: '収穫したお米はフレコンに詰めて出荷。ここから食卓への旅が始まります。'
   }
 ];
