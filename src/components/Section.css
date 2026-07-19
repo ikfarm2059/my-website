@@ -22,3 +22,7 @@
 .body-copy {
   max-width: 760px;
 }
+
+.section.recruit {
+  background: rgba(var(--color-primary-rgb), 0.045);
+}

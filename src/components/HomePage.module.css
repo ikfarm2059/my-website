@@ -34,6 +34,37 @@
   letter-spacing: 0;
 }
 
+.hero_recruit {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.hero_badge {
+  font-size: 0.92rem;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+}
+
+.hero_cta {
+  background: var(--color-cream);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 11px 26px;
+  border-radius: 999px;
+  transition: opacity 0.2s ease;
+}
+
+.hero_cta:hover {
+  opacity: 0.85;
+}
+
 @media (max-width: 768px) {
   .catchphrase_section {
     min-height: 420px;

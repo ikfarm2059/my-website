@@ -65,6 +65,18 @@ a {
   border-bottom-color: var(--color-primary);
 }
 
+.App-header nav a.nav-recruit {
+  background: var(--color-primary);
+  color: var(--color-cream);
+  padding: 6px 16px;
+  border-radius: 999px;
+  border-bottom: none;
+}
+
+.App-header nav a.nav-recruit:hover {
+  opacity: 0.85;
+}
+
 main {
   flex: 1;
 }

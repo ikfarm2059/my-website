@@ -16,7 +16,14 @@ function Layout() {
         <h1><Link to="/">{siteContent.company.name}</Link></h1>
         <nav>
           {siteContent.nav.slice(0, 4).map((item) => (
-            <NavHashLink key={item.href} smooth to={item.href}>{item.label}</NavHashLink>
+            <NavHashLink
+              key={item.href}
+              smooth
+              to={item.href}
+              className={item.href === '/#company-message' ? 'nav-recruit' : undefined}
+            >
+              {item.label}
+            </NavHashLink>
           ))}
           <InstagramLink />
           <NavHashLink smooth to={siteContent.nav[4].href}>{siteContent.nav[4].label}</NavHashLink>

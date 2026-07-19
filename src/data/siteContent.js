@@ -15,12 +15,14 @@ export const siteContent = {
     { href: '/#about', label: '会社のこと' },
     { href: '/#products', label: '育てているもの' },
     { href: '/#work-daily', label: '日々の作業' },
-    { href: '/#company-message', label: '採用について' },
+    { href: '/#company-message', label: '採用情報' },
     { href: '/#contact', label: '連絡先' }
   ],
   hero: {
     locationLabel: '愛知県西尾市吉良町',
-    title: '田んぼから、毎日の食卓へ。'
+    title: '田んぼから、毎日の食卓へ。',
+    recruitBadge: 'スタッフ募集中',
+    recruitCta: '採用情報を見る'
   },
   sectionTitles: {
     about: '会社のこと',
@@ -43,9 +45,16 @@ export const siteContent = {
   recruitment: {
     lead: '一緒に働いてくださる方を探しています。',
     paragraphs: [
-      '外で体を動かす仕事が好きな方、農業機械に興味がある方、地域に根ざした仕事をしてみたい方。経験の有無よりも、毎日の作業をまじめに続けられることを大切にしています。',
-      '詳しい内容は、メールまたはInstagramのDMからお問い合わせください。'
-    ]
+      '外で体を動かす仕事が好きな方、農業機械に興味がある方、地域に根ざした仕事をしてみたい方。経験の有無よりも、毎日の作業をまじめに続けられることを大切にしています。'
+    ],
+    points: [
+      '仕事内容は、米・麦・大豆の栽培作業と、トラクターやコンバインなど農業機械の運転が中心です',
+      '経験や資格は問いません。仕事はひとつずつ丁寧にお教えします',
+      '自動操舵やドローンなど、新しい農業の技術にも日々触れられます'
+    ],
+    note: '「いきなり応募はちょっと…」という方は、見学だけでも大歓迎です。お気軽にご連絡ください。',
+    ctaEmail: 'メールで問い合わせる',
+    ctaInstagram: 'InstagramでDMする'
   },
   contact: {
     message: 'ご相談やお問い合わせは、下記メールアドレスまでご連絡ください。'

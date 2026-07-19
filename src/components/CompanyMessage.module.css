@@ -3,3 +3,52 @@
   font-weight: 600;
   font-size: 1.25rem;
 }
+
+.points {
+  margin: 0 0 1.4em;
+  padding-left: 1.3em;
+}
+
+.points li {
+  font-size: 1.02rem;
+  line-height: 2;
+}
+
+.note {
+  background: rgba(var(--color-primary-rgb), 0.07);
+  border-left: 3px solid var(--color-primary);
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.ctaPrimary {
+  background: var(--color-primary);
+  color: var(--color-cream);
+}
+
+.ctaSecondary {
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.ctaPrimary:hover,
+.ctaSecondary:hover {
+  opacity: 0.82;
+}

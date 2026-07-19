@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 import Section from './Section';
 import AboutUs from './AboutUs';
 import PresidentMessage from './PresidentMessage';
@@ -17,6 +18,12 @@ const HomePage = () => (
       <div className={styles.catchphrase_inner}>
         <p>{siteContent.hero.locationLabel}</p>
         <h2>{siteContent.hero.title}</h2>
+        <div className={styles.hero_recruit}>
+          <span className={styles.hero_badge}>{siteContent.hero.recruitBadge}</span>
+          <NavHashLink smooth to="/#company-message" className={styles.hero_cta}>
+            {siteContent.hero.recruitCta}
+          </NavHashLink>
+        </div>
       </div>
     </section>
 
@@ -35,7 +42,7 @@ const HomePage = () => (
       <WorkDaily />
     </Section>
 
-    <Section id="company-message" title={siteContent.sectionTitles.recruitment}>
+    <Section id="company-message" title={siteContent.sectionTitles.recruitment} className="recruit">
       <CompanyMessage />
     </Section>
 
