@@ -1,6 +1,6 @@
 .president-section {
   display: grid;
-  grid-template-columns: minmax(220px, 320px) 1fr;
+  grid-template-columns: minmax(160px, 240px) 1fr;
   align-items: center;
   gap: clamp(28px, 6vw, 64px);
 }
@@ -26,6 +26,6 @@
   }
 
   .president-image {
-    max-width: 320px;
+    max-width: 240px;
   }
 }

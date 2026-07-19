@@ -4,7 +4,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import './App.css';
 import InstagramLink from './components/InstagramLink';
 import { siteContent } from './data/siteContent';
-import logo from './assets/logo.jpg';
+import logo from './assets/logo-new.png';
 
 function Layout() {
   return (

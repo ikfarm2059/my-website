@@ -19,8 +19,7 @@ a {
   width: 86px;
   height: 86px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid rgba(36, 93, 76, 0.22);
+  mix-blend-mode: multiply;
 }
 
 .App-header {

@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+dev-server.out.log
+dev-server.err.log
+
+# ローカル作業用ファイル(サイトでは未使用)
+src/assets/DJI_0001.MP4
+google-drive-export-*/
+ik-farm-website-google-drive-*.zip
+.claude/
+AGENTS.md
