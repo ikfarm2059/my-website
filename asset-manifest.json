@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.afe89ec7.css",
+    "main.js": "./static/js/main.b6e66d7b.js",
+    "static/media/IMG_daizu_topcon.mov": "./static/media/IMG_daizu_topcon.d74db93621f206a19a2c.mov",
+    "static/media/IMG_202507190849460.MOV": "./static/media/IMG_202507190849460.edccfa3a37da91d30db6.MOV",
+    "static/media/work-daily-water-supply.mp4": "./static/media/work-daily-water-supply.ff873bd11a14c99cb443.mp4",
+    "static/media/work-daily-drone-aerial.mp4": "./static/media/work-daily-drone-aerial.221116d6b041852fc66f.mp4",
+    "static/media/wheat.jpg": "./static/media/wheat.710bae0b87009448e252.jpg",
+    "static/media/logo-new.png": "./static/media/logo-new.8fedc24c76d5ad1263c1.png",
+    "static/media/rice.jpg": "./static/media/rice.5b39f64a1696a2b59472.jpg",
+    "static/media/soy.jpg": "./static/media/soy.d974a8b61de6ba328e85.jpg",
+    "static/media/work-daily-daizuhasyu.jpg": "./static/media/work-daily-daizuhasyu.0f05e21b2f843fa0d8dd.jpg",
+    "static/media/work-daily-power-harrow.jpg": "./static/media/work-daily-power-harrow.c985668308d049cafb99.jpg",
+    "static/media/president.jpg": "./static/media/president.9c88d84c9fd77315d365.jpg",
+    "static/media/work-daily-stubble-cultch.jpg": "./static/media/work-daily-stubble-cultch.ae0430e9d23ae3525b23.jpg",
+    "static/media/work-daily-doronn.jpg": "./static/media/work-daily-doronn.89accd99144d892e16ab.jpg",
+    "static/media/work-daily-soy-prep.jpg": "./static/media/work-daily-soy-prep.48ddcd23d58a43a34e6b.jpg",
+    "static/media/work-daily-inekari-combine.jpg": "./static/media/work-daily-inekari-combine.5046c0b9a0c55bcc44c0.jpg",
+    "static/media/work-daily-inekari-fields.jpg": "./static/media/work-daily-inekari-fields.62f800dc7bc6fd5e3b36.jpg",
+    "static/media/work-daily-flecon-shipping.jpg": "./static/media/work-daily-flecon-shipping.80180e482b8cb424261a.jpg",
+    "index.html": "./index.html",
+    "main.afe89ec7.css.map": "./static/css/main.afe89ec7.css.map",
+    "main.b6e66d7b.js.map": "./static/js/main.b6e66d7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afe89ec7.css",
+    "static/js/main.b6e66d7b.js"
+  ]
+}
