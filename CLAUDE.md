@@ -26,11 +26,10 @@ npm test
 ```
 Launches the test runner in interactive watch mode
 
-### Deploy to GitHub Pages
-```bash
-npm run deploy
-```
-Builds and deploys the app to GitHub Pages (requires `gh-pages` package)
+### Deploy
+本番 https://ik-farm.jp は **Cloudflare Pages** が配信しており、`master` へ push すると自動でビルド・公開される。デプロイのために実行するコマンドは無い。
+
+**`npm run deploy` は実行しないこと。** `gh-pages` ブランチは 2026-07-19 以降、旧URL(ikfarm2059.github.io/my-website)から ik-farm.jp へ転送するリダイレクトページ専用になっている。`npm run deploy` はこれをサイト本体のビルドで上書きし、リダイレクトを壊す。
 
 ## Architecture
 
@@ -57,10 +56,12 @@ The application follows a component-based architecture:
 The website content is primarily in Japanese, serving a Japanese agricultural company. All text content, navigation, and user-facing elements are in Japanese.
 
 ### Deployment
-The site is configured for GitHub Pages deployment with:
-- Homepage set to `https://ikfarm2059.github.io/my-website`
-- Automated deployment via `gh-pages` package
-- Production builds optimized for static hosting
+- 本番URL: `https://ik-farm.jp`(Cloudflare Pages、プロジェクト名 my-website)。`master` への push で自動ビルド・公開
+- `package.json` の `homepage` は `"."`(相対パス)
+- `gh-pages` ブランチは旧URLからのリダイレクト専用。上の「Deploy」の注意を参照
+
+### ルーティングの注意(HashRouter)
+`createHashRouter` を使っているため、セクションへのリンクは `/#/#company-message` のように **ハッシュが2つ**になる。ブラウザは最初の `#` しか解釈しないので、外部から直接開かれた場合のスクロールは `src/Layout.js` の `useInitialAnchorScroll` が担当している。
 
 ## Key Dependencies
 - React 19.1.0 - Main framework
