@@ -1,0 +1,5 @@
+# Cloudflare Pages のリダイレクト設定
+# Instagramのプロフィールなど、外から貼る用の短い入口。
+# HashRouterのため /#/#company-message という形になるが、
+# Instagramのリンク欄は # を %23 に変えてしまうので # を含まない入口を用意する。
+/saiyo  /?to=recruit  302

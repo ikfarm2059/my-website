@@ -6,11 +6,32 @@ import InstagramLink from './components/InstagramLink';
 import { siteContent } from './data/siteContent';
 import logo from './assets/logo-new.png';
 
-// 外部(Instagramのプロフィールなど)から /#/#company-message の形で開かれたときは、
-// HashRouterがルート部分しか見ないため、残りのアンカーへ自分でスクロールする。
-function useInitialAnchorScroll() {
+// 外部から特定のセクションへ直接飛ばすための短い入口。
+// 例: https://ik-farm.jp/?to=recruit
+const SECTION_SHORTCUTS = {
+  recruit: 'company-message',
+  products: 'products',
+  work: 'work-daily',
+  contact: 'contact'
+};
+
+// 外部(Instagramのプロフィールなど)から開かれたときに、目的のセクションまでスクロールする。
+// 対応する形は3つ:
+//   1. /?to=recruit          … 推奨。Instagramのリンク欄は # を %23 に変えてしまうため
+//   2. /#/#company-message   … サイト内リンクと同じ形
+//   3. /#/%23company-message … 上を貼り付けてエンコードされた形
+function useTargetSectionScroll() {
   useEffect(() => {
-    const anchor = window.location.hash.split('#')[2];
+    const shortcut = new URLSearchParams(window.location.search).get('to');
+
+    let hash = window.location.hash;
+    try {
+      hash = decodeURIComponent(hash);
+    } catch (e) {
+      // 壊れたエスケープが混じっていた場合は元の文字列のまま扱う
+    }
+
+    const anchor = SECTION_SHORTCUTS[shortcut] || hash.split('#')[2];
     if (!anchor) return;
 
     if ('scrollRestoration' in window.history) {
@@ -56,7 +77,7 @@ function useInitialAnchorScroll() {
 }
 
 function Layout() {
-  useInitialAnchorScroll();
+  useTargetSectionScroll();
 
   return (
     <div className="App">
