@@ -14,6 +14,15 @@ function CompanyMessage() {
           <li key={point}>{point}</li>
         ))}
       </ul>
+      <h3 className={styles.termsTitle}>{siteContent.recruitment.termsTitle}</h3>
+      <dl className={styles.terms}>
+        {siteContent.recruitment.terms.map((term) => (
+          <React.Fragment key={term.label}>
+            <dt>{term.label}</dt>
+            <dd>{term.value}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
       <p className={styles.note}>{siteContent.recruitment.note}</p>
       <div className={styles.ctaRow}>
         <a

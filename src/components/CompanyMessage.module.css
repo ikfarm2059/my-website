@@ -14,6 +14,43 @@
   line-height: 2;
 }
 
+.termsTitle {
+  font-size: 1.08rem;
+  color: var(--color-primary);
+  margin: 0 0 0.6em;
+}
+
+.terms {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  gap: 10px 18px;
+  margin: 0 0 1.6em;
+  padding: 18px 20px;
+  border: 1px solid rgba(var(--color-primary-rgb), 0.22);
+  border-radius: 6px;
+}
+
+.terms dt {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.terms dd {
+  margin: 0;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .terms {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .terms dd {
+    margin-bottom: 10px;
+  }
+}
+
 .note {
   background: rgba(var(--color-primary-rgb), 0.07);
   border-left: 3px solid var(--color-primary);

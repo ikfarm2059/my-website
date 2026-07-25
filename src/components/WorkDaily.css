@@ -18,6 +18,12 @@
   background: #e4e0d6;
 }
 
+/* 縦型(9:16)のリール動画は、焼き込みテロップが切れないよう全体を表示する */
+.carousel-slide video.portrait {
+  object-fit: contain;
+  background: #23281f;
+}
+
 .carousel-slide p {
   margin-top: 14px;
   font-size: 0.98rem;

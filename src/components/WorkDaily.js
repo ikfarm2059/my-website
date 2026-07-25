@@ -25,7 +25,12 @@ function WorkDaily() {
         {dailyEntries[currentIndex].type === 'image' ? (
           <img src={dailyEntries[currentIndex].src} alt={dailyEntries[currentIndex].alt} />
         ) : (
-          <video src={dailyEntries[currentIndex].src} alt={dailyEntries[currentIndex].alt} controls />
+          <video
+            src={dailyEntries[currentIndex].src}
+            alt={dailyEntries[currentIndex].alt}
+            className={dailyEntries[currentIndex].orientation === 'portrait' ? 'portrait' : undefined}
+            controls
+          />
         )}
         <p>{dailyEntries[currentIndex].caption}</p>
       </div>
