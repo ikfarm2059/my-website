@@ -13,14 +13,45 @@ function useInitialAnchorScroll() {
     const anchor = window.location.hash.split('#')[2];
     if (!anchor) return;
 
-    const timer = window.setTimeout(() => {
-      const target = document.getElementById(anchor);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
 
-    return () => window.clearTimeout(timer);
+    // 写真や動画の読み込みで位置がずれるため、落ち着くまで数回やり直す。
+    // 途中で本人がスクロールしたら邪魔しないよう打ち切る。
+    let cancelled = false;
+    const cancel = () => {
+      cancelled = true;
+    };
+    window.addEventListener('wheel', cancel, { passive: true });
+    window.addEventListener('touchstart', cancel, { passive: true });
+
+    const restoreScrollRestoration = () => {
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'auto';
+      }
+    };
+
+    let tries = 0;
+    const timer = window.setInterval(() => {
+      const target = document.getElementById(anchor);
+      tries += 1;
+
+      if (cancelled || !target || tries > 12) {
+        window.clearInterval(timer);
+        restoreScrollRestoration();
+        return;
+      }
+
+      target.scrollIntoView();
+    }, 200);
+
+    return () => {
+      window.clearInterval(timer);
+      restoreScrollRestoration();
+      window.removeEventListener('wheel', cancel);
+      window.removeEventListener('touchstart', cancel);
+    };
   }, []);
 }
 
