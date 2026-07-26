@@ -18,7 +18,8 @@
   background: #e4e0d6;
 }
 
-/* 縦型(9:16)のリール動画は、焼き込みテロップが切れないよう全体を表示する */
+/* 縦向きの写真とリール動画は、テロップや被写体が切れないよう全体を表示する */
+.carousel-slide img.portrait,
 .carousel-slide video.portrait {
   object-fit: contain;
   background: #23281f;

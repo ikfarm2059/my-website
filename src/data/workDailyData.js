@@ -10,6 +10,10 @@ import workDailyInekariFields from '../assets/work-daily-inekari-fields.jpg';
 import workDailyInekariCombine from '../assets/work-daily-inekari-combine.jpg';
 import workDailyFleconShipping from '../assets/work-daily-flecon-shipping.jpg';
 import workDailyWaterSupply from '../assets/work-daily-water-supply.mp4';
+import workDailyTillingCab from '../assets/work-daily-tilling-cab.jpg';
+import workDailyDiscHarrow from '../assets/work-daily-disc-harrow.jpg';
+import workDailySprayerField from '../assets/work-daily-sprayer-field.jpg';
+import workDailyRobotMower from '../assets/work-daily-robot-mower.mp4';
 
 export const dailyEntries = [
   {
@@ -25,6 +29,36 @@ export const dailyEntries = [
     alt: '除草剤散布の給水作業',
     caption:
       '除草剤の散布は2人ひと組。タンク1000Lでちょうど1ヘクタール分、40分ほどで空になるので、その間に水を運びます。'
+  },
+  {
+    type: 'image',
+    src: workDailySprayerField,
+    orientation: 'portrait',
+    alt: '乗用管理機での除草剤散布',
+    caption:
+      '運んだ水は、この乗用管理機で撒きます。広い圃場を端から端まで、まっすぐ進んでいきます。'
+  },
+  {
+    type: 'video',
+    src: workDailyRobotMower,
+    orientation: 'portrait',
+    alt: 'リモコン式の草刈機による畦畔の草刈り',
+    caption:
+      '夏の畦畔はリモコン式の草刈機の出番。斜面に人が立たなくて済むので、暑い時期の負担がぐっと減りました。'
+  },
+  {
+    type: 'image',
+    src: workDailyTillingCab,
+    orientation: 'portrait',
+    alt: '運転席から見た荒起こし',
+    caption: '荒起こしの一場面。運転席から見ると、起こした土と手つかずの草地の境目がよく分かります。'
+  },
+  {
+    type: 'image',
+    src: workDailyDiscHarrow,
+    orientation: 'portrait',
+    alt: '作業機で土を起こしているところ',
+    caption: '後ろの作業機を気にしながら進みます。土の状態を見て、深さや速度をその都度変えています。'
   },
   {
     type: 'image',

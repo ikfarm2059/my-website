@@ -23,7 +23,11 @@ function WorkDaily() {
     <div className="work-daily-carousel">
       <div className="carousel-slide">
         {dailyEntries[currentIndex].type === 'image' ? (
-          <img src={dailyEntries[currentIndex].src} alt={dailyEntries[currentIndex].alt} />
+          <img
+            src={dailyEntries[currentIndex].src}
+            alt={dailyEntries[currentIndex].alt}
+            className={dailyEntries[currentIndex].orientation === 'portrait' ? 'portrait' : undefined}
+          />
         ) : (
           <video
             src={dailyEntries[currentIndex].src}
