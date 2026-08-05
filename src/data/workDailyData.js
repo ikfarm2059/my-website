@@ -14,6 +14,9 @@ import workDailyTillingCab from '../assets/work-daily-tilling-cab.jpg';
 import workDailyDiscHarrow from '../assets/work-daily-disc-harrow.jpg';
 import workDailySprayerField from '../assets/work-daily-sprayer-field.jpg';
 import workDailyRobotMower from '../assets/work-daily-robot-mower.mp4';
+import workDailyNewTractor from '../assets/work-daily-new-tractor.jpg';
+import workDailySoyPlanterCab from '../assets/work-daily-soy-planter-cab.jpg';
+import workDailyRiceHeading from '../assets/work-daily-rice-heading.jpg';
 
 export const dailyEntries = [
   {
@@ -21,6 +24,14 @@ export const dailyEntries = [
     src: workDailyDroneAerial,
     alt: '夕暮れの圃場の空撮',
     caption: 'ドローンで撮った夕暮れの吉良町。この広い景色ぜんぶが、私たちの仕事場です。'
+  },
+  {
+    type: 'image',
+    src: workDailyNewTractor,
+    orientation: 'portrait',
+    alt: '新しく導入したニューホランドのトラクター',
+    caption:
+      '新しいトラクターが仲間入りしました。機械はどんどん新しくなっていて、経験がなくても扱えるものが増えています。'
   },
   {
     type: 'video',
@@ -98,9 +109,25 @@ export const dailyEntries = [
   },
   {
     type: 'image',
+    src: workDailySoyPlanterCab,
+    orientation: 'portrait',
+    alt: '運転席から見た大豆の播種機',
+    caption:
+      '運転席から見た大豆の播種機。5条まとめて播けますが、種を切らさないよう前を見ながらの作業です。'
+  },
+  {
+    type: 'image',
     src: workDailyDaizuhasyu,
     alt: '大豆の播種',
     caption: '大豆の播種作業。天気と土の状態を見ながら進めています。'
+  },
+  {
+    type: 'image',
+    src: workDailyRiceHeading,
+    orientation: 'portrait',
+    alt: '穂が出そろった田んぼ',
+    caption:
+      '穂が出そろった田んぼ。夕方の光が当たると色づきがよく分かります。稲刈りまであと少しです。'
   },
   {
     type: 'image',
