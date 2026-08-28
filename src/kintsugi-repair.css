@@ -1,0 +1,52 @@
+/* ══ 金継ぎ修理CSS ik-farm.jp（2026-08-28）══
+   naoshi自動処方の下書きを手仕事で検分・差し替えた版。index.js の最後のimportとして読み込む。
+   ソース反映版: CSSモジュールのハッシュ付きクラス名（__e29Iv等）はビルド環境で変わるため、
+   ハッシュに依存しない属性セレクタ [class*="…__"] に置き換えている（色・サイズ等の値は診断のまま不変）。
+
+   手仕事での差し替え:
+   - naoshiの「ヒーロー白文字を濃緑#245D4Cへ」は誤処方（機械はDOM祖先の生成り地で測るが、
+     実際は暗い写真＋スクリムの上の白文字＝設計は正しい）→ 白文字は残し、
+     写真の下に濃い地色のフォールバックを敷く方式へ（写真が読めない環境でも白文字が消えない実利＋計測も正す）
+   - クリーム文字→#E4E0D6 の3行・product-item h3→#222222 は採点が1点も動かない色替えだったため見送り（余計な変更をしない） */
+
+/* [contrast] ヒーロー節に濃い地色のフォールバック（スクリムの基色#142119と同色）。
+   写真レイヤーは z-index:-1 なので、isolation:isolate で節に積層文脈を作り
+   「節の地色 → 写真 → 文字」の順に描かせる（これが無いと写真が地色の下に隠れる＝目視検分で発見）。
+   写真が読み込めない環境でも白文字が読める保険＋機械計測の地色も正しくなる */
+[class*="HomePage_catchphrase_section__"] { background-color: #142119; isolation: isolate; }
+
+/* [font] 役割「ボタン」20px→16px（ボタン3段→2・カルーセル矢印。paddingがあるので見た目の変化は僅少） */
+.carousel-button { font-size: 16px; }
+/* [font] 役割「本文」15.7px→16.3px（本文の主流値へ） */
+.carousel-slide p { font-size: 16.3px; }
+/* [font] 役割「h3」17.3px→20.5px（h3の主流値へ） */
+[class*="CompanyMessage_termsTitle__"] { font-size: 20.5px; }
+
+/* [radius] 角丸4px→6px（4種→3種: 6=面・8=アイコン・999=pill） */
+[class*="CompanyMessage_note__"] { border-radius: 6px; }
+
+/* [color] #1F2A24→#222222（濃色の統合・見た目ほぼ同一） */
+.App-header h1 a { color: #222222; }
+.carousel-button { background-color: #222222; }
+
+/* [color] ナビ・Instagramリンクの #2D3B34→#3B463F（naoshiのsplit-by-bg処方のまま採用） */
+div.App header.App-header a.active:nth-child(1) { color: #3B463F; }
+div.App header.App-header a.active:nth-child(2) { color: #3B463F; }
+div.App header.App-header a.active:nth-child(3) { color: #3B463F; }
+div.App header.App-header a.instagram-icon-link:nth-child(5) { color: #3B463F; }
+header.App-header a.instagram-icon-link svg { color: #3B463F; }
+header.App-header a.instagram-icon-link rect { color: #3B463F; }
+header.App-header a.instagram-icon-link circle:nth-child(3) { color: #3B463F; }
+header.App-header a.instagram-icon-link circle:nth-child(4) { color: #3B463F; }
+header.App-header a.instagram-icon-link span { color: #3B463F; }
+div.App header.App-header a.active:nth-child(6) { color: #3B463F; }
+
+/* [そろい・参考点] 言葉の泣き別れ3件（アイケーファー|ム 等）を文節折りで根治（Chromium系のみ・他は無害） */
+.App-header h1 a, [class*="CompanyMessage_points__"] li, .App-footer p { word-break: auto-phrase; }
+
+@media (max-width: 767px) {
+  /* [color] カルーセルの余白地 #E4E0D6→#F7F5EF（ページ地と統一） */
+  .carousel-slide img, .carousel-slide video { background-color: #F7F5EF; }
+  /* [color] カルーセル矢印の白→クリーム（濃地の上なので見た目ほぼ不変） */
+  .carousel-button { color: #F7F5EF; }
+}

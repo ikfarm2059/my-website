@@ -8,6 +8,8 @@ import './index.css';
 import Layout from './Layout'; // Changed from App to Layout
 import HomePage from './components/HomePage'; // Import the new HomePage component
 import Sales from './components/Sales';
+// 金継ぎ修理CSS（2026-08-28診断）。同名クラスの上書きが効くよう、必ず最後のimportに置く
+import './kintsugi-repair.css';
 
 // Instagramのリンク欄などは URL の # を %23 にエンコードしてしまう。
 // その形(/#/%23company-message)のままだと HashRouter がルートとして解釈できず
