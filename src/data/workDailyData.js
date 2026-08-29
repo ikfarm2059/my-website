@@ -9,7 +9,6 @@ import workDailyDroneAerial from '../assets/work-daily-drone-aerial.mp4';
 import workDailyInekariFields from '../assets/work-daily-inekari-fields.jpg';
 import workDailyInekariCombine from '../assets/work-daily-inekari-combine.jpg';
 import workDailyFleconShipping from '../assets/work-daily-flecon-shipping.jpg';
-import workDailyWaterSupply from '../assets/work-daily-water-supply.mp4';
 import workDailyTillingCab from '../assets/work-daily-tilling-cab.jpg';
 import workDailyDiscHarrow from '../assets/work-daily-disc-harrow.jpg';
 import workDailySprayerField from '../assets/work-daily-sprayer-field.jpg';
@@ -34,20 +33,12 @@ export const dailyEntries = [
       '新しいトラクターが仲間入りしました。機械はどんどん新しくなっていて、経験がなくても扱えるものが増えています。'
   },
   {
-    type: 'video',
-    src: workDailyWaterSupply,
-    orientation: 'portrait',
-    alt: '除草剤散布の給水作業',
-    caption:
-      '除草剤の散布は2人ひと組。タンク1000Lでちょうど1ヘクタール分、40分ほどで空になるので、その間に水を運びます。'
-  },
-  {
     type: 'image',
     src: workDailySprayerField,
     orientation: 'portrait',
     alt: '乗用管理機での除草剤散布',
     caption:
-      '運んだ水は、この乗用管理機で撒きます。広い圃場を端から端まで、まっすぐ進んでいきます。'
+      '除草剤は、この乗用管理機で撒きます。広い圃場を端から端まで、まっすぐ進んでいきます。'
   },
   {
     type: 'video',
